@@ -1,0 +1,16 @@
+{
+  "name": "behappy",
+  "version": "0.0.1",
+  "description": "Get your current mood using machine learning",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "ml-sentiment": "^2.0.7"
+  }
+}
