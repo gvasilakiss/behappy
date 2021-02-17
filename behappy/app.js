@@ -28,7 +28,7 @@ app.listen(3000, () => {
 });
 
 app.get('/*', (req, res) => {
-  res.send("<h1>Put your message after the slash (/) to calculate your mood!</h1>")
+  res.send("<h1>Put your message after the slash (/) to display your current mood!</h1>")
 });
 
 // Error handler
