@@ -1,0 +1,7 @@
+org: gvasilakis
+app: behappy
+component: express
+name: express-starter
+
+inputs:
+  src: ./
