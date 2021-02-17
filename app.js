@@ -1,4 +1,5 @@
 var express = require("express");
+const serverless = require('serverless-http');
 var ml = require('ml-sentiment')();
 var app = express();
 
@@ -16,9 +17,10 @@ app.get('/:text', (req, res) => {
     }
 });
 
-app.listen(3000, () => {
+/* app.listen(3000, () => {
     console.log("Server running on port 3000");
-});
+});*/
+
 // Allow CORS
 app.use((req, res, next) => {
     res.append('Access-Control-Allow-Origin', ['*']);
@@ -26,3 +28,5 @@ app.use((req, res, next) => {
     res.append('Access-Control-Allow-Headers', 'Content-Type');
     next();
 });
+
+module.exports.handler = serverless(app);
