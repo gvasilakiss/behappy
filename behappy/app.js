@@ -15,7 +15,7 @@ app.get('/:text', (req, res) => {
   console.log(ml_res);
   if (ml_res > 1) {
     res.send("<h1>You have a good mood</h1>")
-  } else if (ml_res < 0) {
+  } else if (ml_res < 0 ) {
     res.send("<h1>You have a bad mood</h1>")
   } else {
     res.send("<h1>You have a neutral mood</h1>")
